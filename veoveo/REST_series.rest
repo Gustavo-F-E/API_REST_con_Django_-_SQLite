@@ -1,0 +1,39 @@
+GET http://localhost:8000/series
+###
+GET http://localhost:8000/series/33/
+###
+
+POST http://localhost:8000/series/
+Content-Type: application/json
+
+{
+  "ruta_img_series": "11",
+  "titulo": "11",
+  "descripcion": "11",
+  "link": "11",
+  "categoria": "11",
+  "apto_menores": "11"
+}
+###
+GET http://localhost:8000/series/41/
+###
+PUT http://localhost:8000/series/41/
+Content-Type: application/json
+
+{
+  "ruta_img_series": "55",
+  "titulo": "55",
+  "descripcion": "55",
+  "link": "55",
+  "categoria": "55",
+  "apto_menores": "55"
+}
+###
+PATCH http://localhost:8000/series/41/
+Content-Type: application/json
+
+{
+  "ruta_img_series": "777"
+}
+###
+DELETE http://localhost:8000/series/41/

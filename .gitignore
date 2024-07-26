@@ -1,0 +1,10 @@
+#Carpetas
+venv_django_rest_framework/
+
+#Archivos
+veoveo/db.sqlite3
+veoveo/consultas.json
+veoveo/peliculas.json
+veoveo/series.json
+veoveo/usuarios.json
+veoveo/veoveo/settings.py

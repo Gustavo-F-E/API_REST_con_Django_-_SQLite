@@ -1,0 +1,34 @@
+GET http://127.0.0.1:8000/consultas
+###
+GET http://127.0.0.1:8000/consultas/9/
+###
+POST http://127.0.0.1:8000/consultas/
+Content-Type: application/json
+
+{
+    "nombre_y_apellido": "Sory not sory",
+    "tipo_consulta": "Nada",
+    "URL_captura_problema": "http://127.0.0.1:8000/consultas",
+    "descripcion_problema": "###"
+}
+###
+
+PUT http://127.0.0.1:8000/consultas/9/
+Content-Type: application/json
+
+{
+    "nombre_y_apellido": "Sory not sory",
+    "tipo_consulta": "Técnica",
+    "URL_captura_problema": "URL66",
+    "descripcion_problema": "Esto es Postman"
+}
+###
+
+PATCH http://127.0.0.1:8000/consultas/9/
+Content-Type: application/json
+
+{
+    "descripcion_problema": "Se me apagó la matrix"
+}
+###
+DELETE http://127.0.0.1:8000/consultas/9/

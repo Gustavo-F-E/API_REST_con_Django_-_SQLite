@@ -1,0 +1,35 @@
+GET http://localhost:8000/usuarios
+###
+GET http://localhost:8000/usuarios/gustavo/
+###
+
+POST http://localhost:8000/usuarios/
+Content-Type: application/json
+
+{
+  "username": "nuevo_usuarioooo",
+  "email": "mail_usuario@mail.com",
+  "password": "999",
+  "apto_menores": "YES"
+}
+###
+
+PUT http://localhost:8000/usuarios/nuevo_usuarioooo/
+Content-Type: application/json
+
+{
+  "username": "viejo_usuario",
+  "email": "mail_usuario@mail.com",
+  "password": "123456",
+  "apto_menores": "YES"
+}
+###
+
+PATCH http://localhost:8000/usuarios/viejo_usuario/
+Content-Type: application/json
+
+{
+  "password": "que_te_importa"
+}
+###
+DELETE http://localhost:8000/usuarios/nuevo_usuarioooo"/
